@@ -1,0 +1,14 @@
+  - name: runSh
+    type: runSh
+    steps:
+      - IN: state-test
+      - OUT: state-test
+      - TASK:
+        - script: echo 'This block executes when the TASK starts'
+  - name: runSh
+    type: runSh
+    steps:
+      - IN: state-test
+      - OUT: state-test
+      - TASK:
+        - script: echo 'This block executes when the TASK starts'
