@@ -1,12 +1,12 @@
 jobs:
-  - name: runSh
+  - name: runSh-state-test
     type: runSh
     steps:
       - IN: state-test
       - OUT: state-test
       - TASK:
         - script: echo 'This block executes when the TASK starts'
-  - name: runSh
+  - name: runSh2-state-test
     type: runSh
     steps:
       - IN: state-test
